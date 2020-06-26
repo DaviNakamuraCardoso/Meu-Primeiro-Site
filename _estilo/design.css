@@ -1,0 +1,27 @@
+@charset"UTF-8";
+@font-face { font-family: Gotham; src: url("_estilo/GothamBold.ttf")}
+
+header#cabecalho {
+  font-family: 'Gotham'
+}
+nav#menu {
+  display: block;
+}
+nav#menu ul {
+  position: absolute;
+  list-style: none;
+  text-transform: uppercase;
+  top: -20px;
+  left: 350px;
+}
+nav#menu li {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(108, 132, 250, 0.8);
+  color: rgba(17, 54, 57, 1);
+}
+nav#menu li:hover {
+  background-color: rgba(100, 86, 227, 1);
+  color: white;
+}
