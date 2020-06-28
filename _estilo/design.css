@@ -6,7 +6,7 @@
 
 header#cabecalho {
   font-family: 'Bebas Neue', cursive;
-  border-bottom: 1px #606060 solid;
+  border-bottom: 1px rgba(100, 86, 350, 1) solid;
   height: 150px;
   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
 }
@@ -49,11 +49,16 @@ nav#menu li {
   padding: 10px;
   margin: 10px;
   background-color: rgba(108, 132, 250, 0.8);
+  box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
   transition: 1s;
 }
 nav#menu li:hover {
   background-color: rgba(100, 86, 227, 1);
   color: white;
+}
+nav#menu li:active {
+  box-shadow: 0px 0px 0px white;
+  transition: 1s;
 }
 nav#menu a {
   text-decoration: none;
@@ -63,7 +68,7 @@ nav#menu a {
 img#icone {
   position: absolute;
   left: 80%;
-  top: 70px;
+  top: 65px;
 }
 h1, h2, h3 {
   font-family: 'Gotham', sans-serif;
@@ -108,14 +113,19 @@ section#corpo {
   display: block;
   width: 60%;
   float: left;
-  border-right: 1px #606060 solid;
+  border-spacing: 30px;
+  border-right: 1px rgba(100, 86, 350, 1) solid;
   padding: 15px;
-  margin: 0px;
+  padding-right: 2.9%;
+  margin: auto auto 0px auto;
 }
 article#noticia-principal h1 {
   font-size: 22pt;
+  color: white;
+  box-shadow: 1px 1px 1px white;
   background-color: rgba(151, 162, 240, 0.94);
-  padding: 10px 5px 10px 10px;
+  box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
+  padding: 15px 5px 15px 10px;
   margin: 5px 0px 5px 0px;
 
 }
@@ -138,7 +148,7 @@ table#tabela {
   font-family:'Bebas Neue', cursive;
 }
 table#tabela td {
-  border: 1px solid rgba(36, 48, 107, 1);;
+  border: 1px solid rgba(36, 48, 107, 1);
   padding: 10px;
 
 }
@@ -172,13 +182,25 @@ section#mensagem h1 {
 }
 aside#lateral {
   display: block;
-  width:32%;
-  padding: 10px;
+  width:30%;
+  height: 100%;
+  padding: 15px;
   float: right;
+  background-color: rgba(151, 162, 240, 0.94);
+  margin: 20px 0px 20px 0px;
+  box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
 }
+aside#lateral h1,h2 {
+  color: white;
+
+}
+aside#lateral p {
+
+}
+
 footer#rodape {
   clear: both;
-  border-top: 1px #606060 solid;
+  border-top: 1px  rgba(100, 86, 350, 1) solid;
 
 }
 footer#rodape p {
