@@ -4,11 +4,13 @@
   font-family: 'Gotham'; src: url('GothamMedium.ttf');
 }
 
+
 header#cabecalho {
   font-family: 'Bebas Neue', cursive;
   border-bottom: 1px rgba(100, 86, 350, 1) solid;
   height: 150px;
   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+  margin-bottom: 0px;
 }
 header#cabecalho h1 {
   font-family: 'Ubuntu', sans-serif;
@@ -50,19 +52,38 @@ nav#menu li {
   margin: 10px;
   background-color: rgba(108, 132, 250, 0.8);
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
-  transition: 1s;
+  transition: all 0.7s ease-out;
+  top: 0;
 }
 nav#menu li:hover {
   background-color: rgba(100, 86, 227, 1);
   color: white;
+  position: relative;
+  top: 10px;
 }
 nav#menu li:active {
   box-shadow: 0px 0px 0px white;
   transition: 1s;
+
 }
 nav#menu a {
   text-decoration: none;
   color: black;
+}
+
+header#glass h1 {
+  color: white;
+  background-color: rgba(151, 162, 240, 0.94);
+  padding: 10px;
+  box-shadow: 1px 1px 1px white;
+
+}
+header#glass h2 {
+  color: rgba(151, 162, 240, 0.94);
+  font-size: 15pt;
+}
+article {
+  margin-bottom: 800px;
 }
 
 
@@ -70,13 +91,29 @@ nav#menu a {
 
 img#icone {
   position: absolute;
-  right: 60px;
+  right: 5%;
   top: 67px;
 }
-
-h1, h2, h3 {
+img.img-dir {
+  display: block;
+  float: right;
+  margin-left: 15px;
+}
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25pt;
+  color: rgba(108, 132, 250, 1);
+  margin-bottom: 15px;
+}
+h2 {
   font-family: 'Gotham', sans-serif;
-  color: rgba(36, 58, 107, 1)
+  color: rgba(151, 162, 240, 0.7);
+  margin-top: 15px;
+}
+h3 {
+  font-family: 'Gotham', sans-serif;
+  color: rgba(36, 58, 107, 1);
+  margin: 15px 0px 15px 0px;
 }
 p {
   text-align: justify;
@@ -120,8 +157,15 @@ section#corpo {
   border-spacing: 30px;
   border-right: 1px rgba(100, 86, 350, 1) solid;
   padding: 15px;
+  padding-top: 0px;
   padding-right: 2.9%;
   margin: auto auto 0px auto;
+}
+article#noticia-principal {
+  margin-bottom: 0px;
+  padding: 15px;
+  padding-top: 0px;
+
 }
 article#noticia-principal h1 {
   font-size: 22pt;
@@ -131,7 +175,6 @@ article#noticia-principal h1 {
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
   padding: 15px 5px 15px 10px;
   margin: 5px 0px 5px 0px;
-
 }
 article#noticia-principal h2 {
   color: rgba(108, 132, 250, .9);
@@ -142,6 +185,18 @@ article#noticia-principal a {
 }
 article#noticia-principal a:hover {
   text-decoration: underline;
+}
+article hgroup#info h1 {
+  font-size: 25pt;
+  color: rgba(108, 132, 250, .9);
+  background-color: white;
+  padding: 0px;
+  box-shadow: none;
+  margin: 0px;
+}
+article hgroup#info h2 {
+  font-family: 'Gotham', sans-serif;
+  color: rgba(151, 162, 240, 0.7);
 }
 table#tabela {
   border: 1px solid rgba(36, 48, 107, 1);
@@ -201,17 +256,18 @@ aside#lateral {
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
 }
 aside#lateral h1, aside#lateral h2 {
-  background-color: rgba(36, 48, 107, 1);
-  box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
   color: white;
   padding: 10px;
 
 }
 aside#lateral h1 {
-  font-size: 20pt;
+  font-size: 22pt;
+  margin: 0px;
 }
 aside#lateral h2 {
   font-size: 15pt;
+  background-color: rgba(36, 48, 107, 1);
+  box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
 }
 aside#lateral p {
 
@@ -228,4 +284,9 @@ footer#rodape p {
 }
 form {
   font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+article#tela p, article#camera p, article#gadgets p, article#sensores p {
+  font-size: 12pt;
 }
