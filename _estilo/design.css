@@ -51,6 +51,7 @@ nav#menu li {
   background-color: rgba(108, 132, 250, 0.8);
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
   transition: 1s;
+  transform: translateY(4px);
 }
 nav#menu li:hover {
   background-color: rgba(100, 86, 227, 1);
@@ -63,6 +64,28 @@ nav#menu li:active {
 nav#menu a {
   text-decoration: none;
   color: black;
+}
+/* .button {
+  .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+} */
 }
 /* Formatação da imagem */
 img#icone {
@@ -180,6 +203,12 @@ section#mensagem h1 {
   text-align: center;
   font-family:'Bebas Neue', cursive;
 }
+section#mensagem h2 {
+  background-color: rgba(151, 162, 240, 0.94);
+  box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
+  color: white;
+  padding: 10px;
+}
 aside#lateral {
   display: block;
   width:30%;
@@ -190,9 +219,18 @@ aside#lateral {
   margin: 20px 0px 20px 0px;
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
 }
-aside#lateral h1,h2 {
+aside#lateral h1, aside#lateral h2 {
+  background-color: rgba(36, 48, 107, 1);
+  box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
   color: white;
+  padding: 10px;
 
+}
+aside#lateral h1 {
+  font-size: 20pt;
+}
+aside#lateral h2 {
+  font-size: 15pt;
 }
 aside#lateral p {
 
