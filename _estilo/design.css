@@ -64,34 +64,16 @@ nav#menu a {
   text-decoration: none;
   color: black;
 }
-/* .button {
-  .button {
-  padding: 15px 25px;l
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
 
-.button:hover {background-color: #3e8e41}
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-} */
-}
 /* Formatação da imagem */
-img#icone {
+
+#icon {
   position: absolute;
-  left: 80%;
-  top: 65px;
+  right: 60px;
+  top: 67px;
 }
+
 h1, h2, h3 {
   font-family: 'Gotham', sans-serif;
   color: rgba(36, 58, 107, 1)
