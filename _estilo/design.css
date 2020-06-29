@@ -51,7 +51,6 @@ nav#menu li {
   background-color: rgba(108, 132, 250, 0.8);
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
   transition: 1s;
-  transform: translateY(4px);
 }
 nav#menu li:hover {
   background-color: rgba(100, 86, 227, 1);
@@ -67,7 +66,7 @@ nav#menu a {
 }
 /* .button {
   .button {
-  padding: 15px 25px;
+  padding: 15px 25px;l
   font-size: 24px;
   text-align: center;
   cursor: pointer;
