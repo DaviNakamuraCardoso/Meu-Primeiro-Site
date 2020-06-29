@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <title>Fotos</title>
   <link rel="stylesheet" type="text/css" href="../_estilo/design.css"/>
+  <script src="../_codigosjscript/jscript.js"></script>
 </head>
 <body>
   <div id="interface">
@@ -11,14 +12,15 @@
       <h1>Fotos</h1>
       <nav id="menu">
         <ul>
-          <a href="../index.html"><li>Menu</li></a>
-          <a href="multimidia.html"><li>Multimídia</li></a>
-          <a href="fotos.html"><li>Fotos</li></a>
-          <a href="especificacoes.html"><li>Especificações</li></a>
-          <a href="faleconosco.html"><li>Fale Conosco</li></a>
+          <a href="index.html" onmouseover="mudaIcone('home')"; onmouseout="mudaIcone('glass-oculos-preto-peq')"><li>Menu</li></a>
+          <a href="multimidia.html" onmouseover="mudaIcone('multimidia')" onmouseout="mudaIcone('glass-oculos-preto-peq')"><li>Multimídia</li></a>
+          <a href="fotos.html" onmouseover="mudaIcone('fotos')"; onmouseout="mudaIcone('glass-oculos-preto-peq')"><li>Fotos</li></a>
+          <a href="especificacoes.html" onmouseover="mudaIcone('especificacoes')"; onmouseout="mudaIcone('glass-oculos-preto-peq')"><li>Especificações</li></a>
+          <a href="faleconosco.html" onmouseover="mudaIcone('contato')"; onmouseout="mudaIcone('glass-oculos-preto-peq')"><li>Fale Conosco</li></a>
         </ul>
       </nav>
     </header>
+    <img id="icone" src="../_imagens/glass-oculos-preto-peq.png"/>
     <section>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusantium nostrum temporibus ut ipsam dolores asperiores totam, debitis, natus molestiae praesentium omnis ducimus, modi iste ea! Omnis quis, eos recusandae.</p>
     </section>
