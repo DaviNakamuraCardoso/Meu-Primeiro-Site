@@ -99,21 +99,31 @@ img.img-dir {
   float: right;
   margin-left: 15px;
 }
+article#info {
+  float: left;
+  position: absolute;
+  padding-right: 19.5%;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+h1, h2, h3 {
+  margin: 10px 0px 10px 25px;
+}
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 25pt;
   color: rgba(108, 132, 250, 1);
-  margin-bottom: 15px;
+
 }
 h2 {
   font-family: 'Gotham', sans-serif;
   color: rgba(151, 162, 240, 0.7);
-  margin-top: 15px;
+
 }
 h3 {
   font-family: 'Gotham', sans-serif;
   color: rgba(36, 58, 107, 1);
-  margin: 15px 0px 15px 0px;
+
 }
 p {
   text-align: justify;
@@ -130,6 +140,7 @@ figure.foto-legenda {
 figure.foto-legenda img {
   width: 100%;
   height: 100%;
+  padding: 0px;
 }
 figure.foto-legenda figcaption {
   opacity: 0;
@@ -143,6 +154,10 @@ figure.foto-legenda figcaption {
   box-sizing: border-box;
   transition: opacity 1s;
 }
+figure.foto-legenda figcaption h2, figure.foto-legenda figcaption p {
+  margin: 10px;
+
+}
 figure.foto-legenda p {
   text-indent: 1px;
 }
@@ -155,11 +170,12 @@ section#corpo {
   width: 60%;
   float: left;
   border-spacing: 30px;
+  box-sizing: border-box;
   border-right: 1px rgba(100, 86, 350, 1) solid;
   padding: 15px;
   padding-top: 0px;
   padding-right: 2.9%;
-  margin: auto auto 0px auto;
+  margin: 0px auto 0px auto;
 }
 article#noticia-principal {
   margin-bottom: 0px;
@@ -249,10 +265,12 @@ aside#lateral {
   display: block;
   width:30%;
   height: 100%;
-  padding: 15px;
+  padding: 2%;
   float: right;
   background-color: rgba(151, 162, 240, 0.94);
   margin: 20px 0px 20px 0px;
+  border-spacing: 30px;
+  border-left: 1px rgba(100, 86, 350, 1) solid;
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
 }
 aside#lateral h1, aside#lateral h2 {
@@ -268,6 +286,7 @@ aside#lateral h2 {
   font-size: 15pt;
   background-color: rgba(36, 48, 107, 1);
   box-shadow: -1px 2px 3px rgba(36, 48, 107, 1);
+  margin: 10px;
 }
 aside#lateral p {
 
@@ -289,4 +308,14 @@ form {
 
 article#tela p, article#camera p, article#gadgets p, article#sensores p {
   font-size: 12pt;
+}
+body#gglass h1, body#gglass h2, body#gglass p {
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+}
+body#gglass p {
+  text-indent: 0px;
+}
+img {
+  padding-left: 10px;
 }
