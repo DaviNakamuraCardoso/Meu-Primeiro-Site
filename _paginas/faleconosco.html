@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <title>Fale Conosco</title>
   <link rel="stylesheet" type="text/css" href="../_estilo/design.css"/>
+  <link rel="stylesheet" type="text/css" href="../_estilo/forms.css"/>
   <script src="../_codigosjscript/jscript.js"></script>
 </head>
 <body>
@@ -30,17 +31,61 @@
     <img id="icone" src="../_imagens/glass-oculos-preto-peq.png" />
     <section id="mensagem">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse atque, necessitatibus placeat eum, excepturi, voluptatum numquam dolorem aspernatur deserunt ipsum enim, rem quos incidunt velit. Enim eum magni, voluptatem!</p>
-      <h2>Avalie-nos!</h2>
-      <form action="agradecimento.html">
-        <label for="opinioes" required>
-          <input type="radio" name="opinioes" value="pessimo"> Péssimo<br/>
-          <input type="radio" name="opinioes" value="ruim"> Ruim<br/>
-          <input type="radio" name="opinioes" value="regular" checked> Regular<br/>
-          <input type="radio" name="opinioes" value="bom"> Bom<br/>
-          <input type="radio" name="opinioes" value="otimo"> Ótimo<br/>
-          <input type="text" placeholder="Insira aqui um comentário"/>
-          <button type="submit">Submeter</button>
-        </label>
+      <form method="post" action="mailto:davinakamuracardoso@gmail.com">
+        <fieldset id="usuario"><h2><legend>Identificação</legend></h2>
+          <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="40" maxlength="40" placeholder="Nome Completo"/></p>
+          <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="40" maxlength="40" placeholder="Insira aqui seu email" /></p>
+          <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="40" maxlength:"8" placeholder="Senha de 8 dígitos" /></p>
+          <fieldset id="sex"><legend><h3>Sexo</h3></legend>
+            <input type="radio" name="cS" id="cM" checked/><label for="cM">Masculino <b>&#9794;</b></label><br/>
+            <input type="radio" name="cS" id="cF" /><label for="cF">Feminino <b>&#9792;</b></label>
+          </fieldset>
+          <p>Data de nascimento:<input type="date" id="cData" name="tData" maxlength="8" placeholder="__/__/____" /></p>
+        </fieldset>
+        <fieldset id="endereco"><h2><legend>Endereço</legend></h2>
+          <label for="cLogr"><p>Rua/Bairro:</label><input type="text" name="tLogr" id="cLogr" lenght="30" /maxlenght="30" placeholder="Rua, bairro e adicionais"></p>
+          <label for="cNum"><p>Número:</label><input type="number" name="tNum" min="0" id="cNum" lenght="30" maxlenght="30" placeholder="Digite apenas algarismos"/></p>
+          <label for="cCidade"><p>Cidade:</label><input type="text" id="cCidade" name="tCidade" lenght="30" placeholder="Sua cidade atual"/></p>
+          <label for="cEstado"><p>Estado:</label><select name="tEstado" id="cEstado" lenght="30"/></p><br />
+            <option value="SP" selected>São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="BH">Belo Horizonte</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="GO">Goiás</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="AL">Alagoas</option>
+            <option value="PE">Pernambuco</option>
+            <option value="RR">Roraima</option>
+            <option value="TO">Tocantins</option>
+            <option value="AM">Amazonas</option>
+            <option value="AC">Acre</option>
+            <option value="AA">Amapá</option>
+            <option value="MA">Maranhão</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="PI">Piauí</option>
+            <option value="PA">Paraíba</option>
+            <option value="RO">Rondônia</option>
+            <option value="SE">Sergipe</option>
+
+        </fieldset>
+        <fieldset id="mensagem"><h2><legend>Mensagem</legend></h2>
+          Grau de urgência:
+          Mensagem:
+        </fieldset>
+        <fieldset id="pedido"><h2><legend>Quero um Google Glass</legend></h2>
+          Gostaria de adquirir um Google Glass  quando disponível
+          Cor:
+          Quantidade:
+          Preço total: R&dollar;
+
+        </fieldset>
       </form>
     </section>
   </div>
