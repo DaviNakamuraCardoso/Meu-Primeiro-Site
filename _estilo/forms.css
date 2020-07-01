@@ -11,8 +11,6 @@ form p {
   font-size: 20px;
   font-family: 'Bebas Neue', cursive;
   color: rgba(36, 48, 107, 1);
-
-
 }
 
 
@@ -20,7 +18,7 @@ form h2 {
   margin: 0px;
 }
 
-form input {
+form input, textarea {
   text-decoration: none;
   padding: 10px;
   border: 2px solid lightgray;
@@ -29,7 +27,7 @@ form input {
   margin-top: -6px;
 
 }
-form input:focus {
+form input:focus, textarea:focus {
   outline: none;
   border: 2px solid rgba(100, 86, 227, 1);
 }
@@ -75,9 +73,67 @@ form select {
   left: 215px;
   margin-top: -6px;
   width: 145.5pt;
-
 }
 form select:focus {
   outline: none;
   border: 2px solid rgba(100, 86, 227, 1);
+}
+fieldset#msg input {
+  left: 260px;
+  margin-top: -8px;
+}
+fieldset {
+  margin-top: 20px;
+}
+textarea {
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+fieldset#msg label#txt {
+  position: relative;
+  bottom: 120px;
+
+}
+fieldset#pedido input#cPed {
+  position: absolute;
+  left: 8%;
+  margin-top: 3.6px;
+}
+fieldset#pedido input#cCor {
+  padding: 5px;
+  position: relative;
+  left: 5.7%;
+}
+fieldset#pedido input#cQuant {
+  position: relative;
+  left: 1%;
+  margin-top: 0px;
+}
+fieldset#pedido input#cVal {
+  position: relative;
+  left: 0.7%;
+  margin-top: 0px;
+}
+button {
+  display: block;
+  float: right;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20pt;
+  color: white;
+  background-color: rgba(100, 86, 227, 1);
+  padding: 10px;
+  margin: 20px;
+  margin-right: 40px;
+  box-shadow: 1px 2px 3px rgba(36, 48, 107, 1);
+  bottom: 0;
+  -webkit-transition: all 0.5s linear;
+}
+button:hover {
+  position: relative;
+  bottom: 5px;
+
+}
+button:active {
+  box-shadow: 0px 0px 0px white;
 }
