@@ -9,7 +9,7 @@ header#cabecalho {
   font-family: 'Bebas Neue', cursive;
   border-bottom: 1px rgba(100, 86, 350, 1) solid;
   height: 150px;
-  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+  background: url("../imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
   margin-bottom: 0px;
 }
 header#cabecalho h1 {
