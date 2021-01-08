@@ -1,5 +1,5 @@
 function mudaIcone(foto) {
-  document.getElementById("icone").src = "imagens/" + foto + ".png";
+  document.querySelector("#icone").src = "imagens/" + foto + ".png";
 
 
 }
